@@ -15,8 +15,8 @@ import com.asknhcrn.elasticsearch.entity.Product;
 import com.asknhcrn.elasticsearch.repository.ProductRepository;
 
 @RestController
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/product")
+public class ProductController {
 	
 	private final ProductRepository userRepository;
 	
@@ -30,7 +30,7 @@ public class UserController {
         userRepository.save(product);
     }
 
-	public UserController(ProductRepository userRepository) {
+	public ProductController(ProductRepository userRepository) {
 		super();
 		this.userRepository = userRepository;
 	}
